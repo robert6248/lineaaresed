@@ -4,6 +4,7 @@
 #    print(f"Korrutis võrdub: {a*b}")
 
 # #kas a on paaris või paaritu arv?
+# a=float(input("A: "))
 # if a%2==0 and a!=0:
 #     print(f"Arv {a} on paaris")
 # elif a==0:
@@ -11,7 +12,7 @@
 # else:
 #     print(f"Arv {a} on paaritud")
 
-#Ema-robot 5-, 4-, 3-, 2-, 1-
+# #Ema-robot 5-, 4-, 3-, 2-, 1-
 # try:
 #     hinne=int(input("Mis hinne sai täna koolis?: "))
 #     if hinne in range(1,6):
@@ -37,11 +38,10 @@
 # else:
 #     print("Ei ole kõik suured tähed")
 
-#ülesanne
-#1 Juku
+# #ülesanne
+# #1 Juku
 # nimi = input("Mis on sinu nimi? ")
-
-# if nimi="JUKU":
+# if nimi=="JUKU":
 #     print("Lähme kinno!")
 #     try:
 #         vanus = int(input("Kui vana sa oled? "))
@@ -60,8 +60,8 @@
 # else:
 #     print("Ma olen hõivatud! Mine kinno ise!")
 
-#2 pinginaabrid
-#Robert Ruslan Bohdan
+# # 2 pinginaabrid
+# # Robert Ruslan Bohdan
 # nimed=["Robert","Ruslan","Bohdan"]
 # nimi1=input()
 # nimi2=input()
@@ -72,7 +72,7 @@
 #     print("Ei ole pinginaabrid")
 
 
-#3 remont
+# # 3 remont
 # try:
 #     a = float(input("Sisesta pikkus: "))
 #     b = float(input("Sisesta laius: "))
@@ -93,4 +93,29 @@
 #     print("Pikkus, laius ja hind peavad olema numbrid!")
 
 
-#
+# # #ülesanne 4
+# alghind = float(input("Sisesta toode alghind: "))
+# if alghind > 700:
+#     soodus = alghind * 0.70  
+#     print(f"Soodus hind on {soodus} eurot.")
+# else:
+#     print("Soodustus ei kehti")
+
+
+#ülesanne 5 temperatuur
+temperatuur = float(input("Mis on praegune temperatuur? "))
+
+if temperatuur > 18:
+    print("Temperatuur on üle 18 kraadi, see on soe!")
+else:
+    print("Temperatuur on alla 18 kraadi, võib olla on jahe.")
+
+#ülesanne 6 pikkus
+pikkus = float(input("Mis on sinu pikkus (cm)? "))
+
+if pikkus < 160:
+    print("Oled lühike.")
+elif 160 <= pikkus <= 180:
+    print("Oled keskmine.")
+else:
+    print("Oled pikk.")
