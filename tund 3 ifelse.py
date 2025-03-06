@@ -102,20 +102,55 @@
 #     print("Soodustus ei kehti")
 
 
-#ülesanne 5 temperatuur
-temperatuur = float(input("Mis on praegune temperatuur? "))
+# # ülesanne 5 temperatuur
+# temperatuur = float(input("Mis on praegune temperatuur? "))
 
-if temperatuur > 18:
-    print("Temperatuur on üle 18 kraadi, see on soe!")
-else:
-    print("Temperatuur on alla 18 kraadi, võib olla on jahe.")
+# if temperatuur > 18:
+#     print("Temperatuur on üle 18 kraadi, see on soe!")
+# else:
+#     print("Temperatuur on alla 18 kraadi, võib olla on jahe.")
 
-#ülesanne 6 pikkus
+# #ülesanne 6 pikkus
+# pikkus = float(input("Mis on sinu pikkus (cm)? "))
+
+# if pikkus < 160:
+#     print("Oled lühike.")
+# elif 160 <= pikkus <= 180:
+#     print("Oled keskmine.")
+# else:
+#     print("Oled pikk.")
+
+#Ülesanne 7
 pikkus = float(input("Mis on sinu pikkus (cm)? "))
+sugu = input("Mis on sinu sugu (Mees või Naine)? ").lower()
 
-if pikkus < 160:
-    print("Oled lühike.")
-elif 160 <= pikkus <= 180:
-    print("Oled keskmine.")
+if sugu == "mees":
+    if pikkus < 170:
+        print("Oled lühike.")
+    elif pikkus <= 185:
+        print("Oled keskmine.")
+    else:
+        print("Oled pikk.")
+elif sugu == "naine":
+    if pikkus < 160:
+        print("Oled lühike.")
+    elif pikkus <= 175:
+        print("Oled keskmine.")
+    else:
+        print("Oled pikk.")
 else:
-    print("Oled pikk.")
+    print("Vigane sisend.")
+
+
+#Ülesanne 8
+# import random
+# tooted = {
+#     "piim": random.randint(1, 8),
+#     "saia": random.randint(1, 5),  
+#     "leib": random.randint(1, 6)
+# }
+# total = 0
+# for toode, hind in tooted.items():
+#     count = int(input(f"Kui palju {toode} tahad osta? (hind: {hind} €): "))
+#     total += hind * count
+# print(f"Kokku: {total} €")
