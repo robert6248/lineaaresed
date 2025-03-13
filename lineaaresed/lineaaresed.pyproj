@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ede115a3-58fb-4387-a460-617b4b46b7bc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tund 2.3.py</StartupFile>
+    <StartupFile>tund 2.4.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="lineaaresed.py" />
     <Compile Include="Lihtsad prgrammid.py" />
+    <Compile Include="tund 2.4.py" />
     <Compile Include="tund 2.3.py" />
     <Compile Include="tund 2.2.py" />
     <Compile Include="tund 1.3 ifelse.py" />
