@@ -68,7 +68,7 @@ print("Изменённый список:", numbers)
 
 # #16 ülesanne
 import random
-vastused = ["Jah", "Ei", "Võib-olla", "Kindlasti", "Tõenäoliselt"]
+vastused = ["Jah, kindlasti", "Jah", "Võib-olla", "Ei"]
 küsimus = input("Esita küsimus: ")
 vastus = random.choice(vastused)
 print("Vastus:", vastus)
