@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="lineaaresed.py" />
     <Compile Include="Lihtsad prgrammid.py" />
+    <Compile Include="tund 4.5.py" />
     <Compile Include="tund 4.4.py" />
     <Compile Include="tund 17.03.py" />
     <Compile Include="tund 2.4.py" />
