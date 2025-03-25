@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ede115a3-58fb-4387-a460-617b4b46b7bc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tund 4.3 wordle.py</StartupFile>
+    <StartupFile>funktsioonide kasutamine.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,8 @@
   <ItemGroup>
     <Compile Include="lineaaresed.py" />
     <Compile Include="Lihtsad prgrammid.py" />
+    <Compile Include="kasutaja_funktsioonide.py" />
+    <Compile Include="funktsioonide kasutamine.py" />
     <Compile Include="Tund 4.3 wordle.py" />
     <Compile Include="tund 4.5.py" />
     <Compile Include="tund 4.4.py" />
