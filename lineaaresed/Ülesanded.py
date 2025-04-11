@@ -17,7 +17,7 @@ kas_käib_koolis = True
 print(f"Muutuja {vanus} on {type(vanus)} tüübi")
 print(f"Muutuja {eesnimi} on {type(eesnimi)} tüübi")
 print(f"Muutuja {pikkus} on {type(pikkus)} tüübi")
-print(f"Muutuja {kas_käib_koolis} on {type(kas_käib_koolis)} tüübi") 
+print(f"Muutuja {kas_käib_koolis} on {type(kas_käib_koolis)} tüübi")
 #ülesanne 3
 kommidearv=randint(1,100)
 print(f"Laual on {kommidearv} kommid")
