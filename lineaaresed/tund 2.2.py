@@ -2,7 +2,7 @@ from math import *
 #1
 try:
     arv=input("Sisesta arv: ")
-    if arv.isnumeric()
+    if arv.isnumeric():
         arv=int(arv)
         if arv>0:
             if arv%2==0:
