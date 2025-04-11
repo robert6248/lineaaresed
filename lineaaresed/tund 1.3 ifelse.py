@@ -6,7 +6,7 @@ if a>0 and b>0:
 #kas a on paaris või paaritu arv?
 a=float(input("A: "))
 if a%2==0 and a!=0:
-    print(f"Arv {a} on paaris")
+    print(f"Arv {a} on paaris")  
 elif a==0:
     print(f"Arv {a} on märamatu") 
 else:

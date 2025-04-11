@@ -86,7 +86,7 @@ for küsimuse_nr in range(10):
     p=0
     õ=0
     vastus=0
-    while p<5 and vastus!=õige_vastus:
+    while p<5 and vastus!=õige_vastus: 
         vastus=int(input("="))
         if vastus==õige_vastus:
             print("Tubli!")

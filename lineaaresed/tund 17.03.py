@@ -21,7 +21,7 @@ print(elemendid)
 elemendid.remove("A")
 print(elemendid)
 #pop
-elemendid.pop(0)
+elemendid.pop(0) 
 elemendid.pop()
 print(elemendid)
 #index 

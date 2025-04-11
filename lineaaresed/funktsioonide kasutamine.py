@@ -45,7 +45,7 @@ from math import *
 #             print("Palun sisesta kuu number vahemikus 1-12.")  
 #     except:
 #         print("Viga! Palun sisesta number.") 
-
+ 
 
 # #bank
 # while True:

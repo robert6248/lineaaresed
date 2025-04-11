@@ -15,7 +15,7 @@ eesnimi = "Jaak"
 pikkus = 16.5
 kas_käib_koolis = True
 print(f"Muutuja {vanus} on {type(vanus)} tüübi")
-print(f"Muutuja {eesnimi} on {type(eesnimi)} tüübi")
+print(f"Muutuja {eesnimi} on {type(eesnimi)} tüübi") 
 print(f"Muutuja {pikkus} on {type(pikkus)} tüübi")
 print(f"Muutuja {kas_käib_koolis} on {type(kas_käib_koolis)} tüübi")
 #ülesanne 3

@@ -13,7 +13,7 @@ try:
         print(f"Ruudu diagonaal, {round(di, 2)}")
     else:
         print("Külg ei saa olla <=0-ga")
-except:
+except: 
     print("Külje suurus on vaja int formaadis sisestada!")
 # ----------------------
 print("Ristküliku karakteristikud")

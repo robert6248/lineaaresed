@@ -10,7 +10,7 @@ for i in range(0,6,1):
     answerlist=list(answer)
     for a in range(0,k,1):
         o+=1
-        if answerlist[o]==rndlist[o]:
+        if answerlist[o]==rndlist[o]: 
             print(answerlist[o],end=" ")
         else:
             print("*",end=" ")

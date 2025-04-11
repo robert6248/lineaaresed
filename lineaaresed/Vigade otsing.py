@@ -15,7 +15,7 @@ b = float(input("Sisesta ristküliku 1. külje pikkus => "))
 c = float(input("Sisesta ristküliku 2. külje pikkus => "))
 S = b * c
 P = 2 * (b + c)
-di = math.sqrt(b**2 + c**2)
+di = math.sqrt(b**2 + c**2) 
 print("Ristküliku pindala", S)
 print("Ristküliku ümbermõõt", P)
 print("Ristküliku diagonaal", round(di, 2))

@@ -50,7 +50,7 @@ numbers = [0] * n
 for i in range(n):
     numbers[i] = int(input(f"Введите число {i + 1}: "))
 order = input("Введите порядок сортировки (возрастание или убывание): ")
-if order == "возрастание":
+if order == "возрастание": 
     numbers.sort(key=abs)
 elif order == "убывание":
     numbers.sort(key=abs)

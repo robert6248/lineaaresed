@@ -8,7 +8,7 @@ try:
             if arv%2==0:
                 print("Paaris arv")
             else:
-                print("Paaritu")
+                print("Paaritu") 
         else:
             print("Negatiivne arv")
 except:

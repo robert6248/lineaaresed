@@ -85,7 +85,7 @@ from random import *
 #     print(a)
 #     v=True
 #     for jagaja in range(2,a):
-#         if a%jagaja==0: 
+#         if a%jagaja==0:  
 #             v=False
 #     return v
 
