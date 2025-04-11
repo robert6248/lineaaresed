@@ -46,7 +46,7 @@ from math import *
 #     except:
 #         print("Viga! Palun sisesta number.") 
  
-
+ 
 # #bank
 # while True:
 #     try: 

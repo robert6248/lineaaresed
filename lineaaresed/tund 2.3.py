@@ -22,7 +22,7 @@ try:
             if kmi < 16:
                 hinnang = "Tervisele ohtlik alakaal"
             elif kmi < 20:
-                hinnang = "Alakaal"
+                hinnang = "Alakaal" 
             elif kmi < 26:
                 hinnang = "Normaalkaal"
             elif kmi < 31:

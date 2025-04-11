@@ -7,7 +7,7 @@ from calendar import *
 tana=date.today()
 print(f"Tere! Täna on {tana}.")
 
-# 27/12/2022
+# 27/12/2022 
 tana1 = tana.strftime("%d/%m/%Y")
 print(tana1)
 # December 27, 2022

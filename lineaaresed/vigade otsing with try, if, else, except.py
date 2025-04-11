@@ -14,7 +14,7 @@ try:
     else:
         print("Külg ei saa olla <=0-ga")
 except: 
-    print("Külje suurus on vaja int formaadis sisestada!")
+    print("Külje suurus on vaja int formaadis sisestada!") 
 # ----------------------
 print("Ristküliku karakteristikud")
 try:

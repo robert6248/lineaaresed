@@ -13,7 +13,7 @@ try:
             print("Negatiivne arv")
 except:
     print("Kirjuta numbreid") 
-
+     
 
 #2
 try:

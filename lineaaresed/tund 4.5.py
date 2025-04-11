@@ -13,7 +13,7 @@ while True:
             print("2-7 s. kontroll")
             if int (ik_list[1]+ik_list[2]) in range(0,100):
                 print("2,3 sümbolid on ok") 
-                if int (ik_list[3]+ik_list[4]) in range(1,13):
+                if int (ik_list[3]+ik_list[4]) in range(1,13): 
                     print("4,5 sümbolid on ok")
                     if int(ik_list[5]+ik_list[6]) in range (1,32) and int(ik_list[3]+ik_list[4]) in range(1,13,2) or int(ik_list[5]+ik_list[6]) in range(1,31) and int(ik_list[3]+ik_list[4]) in range(4,13,2) or int(ik_list[5]+ik_list[6]) in range(1,30) and int(ik_list[3]+ik_list[4])==2:
                         print("6,7 sümbolid on ok")

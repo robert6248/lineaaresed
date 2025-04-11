@@ -16,7 +16,7 @@ for i in range(0,6,1):
             print("*",end=" ")
     print()
     if answer==rnd: 
-        print("Correct! the word was ", rnd, )
+        print("Correct! the word was ", rnd, ) 
         break
     else:
         print("Wrong! ", 6-i-1, "attemps remains")

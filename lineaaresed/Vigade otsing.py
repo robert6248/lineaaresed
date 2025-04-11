@@ -13,7 +13,7 @@ print("Ruudu diagonaal", round(di, 2))
 print("Ristküliku karakteristikud")
 b = float(input("Sisesta ristküliku 1. külje pikkus => "))
 c = float(input("Sisesta ristküliku 2. külje pikkus => "))
-S = b * c
+S = b * c 
 P = 2 * (b + c)
 di = math.sqrt(b**2 + c**2) 
 print("Ristküliku pindala", S)

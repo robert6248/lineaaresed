@@ -56,7 +56,7 @@ elif order == "убывание":
     numbers.sort(key=abs)
     numbers = numbers[::-1]
 print("Отсортированный список:", numbers)
-
+ 
 # 12 ülesanne
 import random
 numbers = [random.randint(1, 100) for _ in range(10)]
