@@ -20,7 +20,7 @@ def Lisa_andmed(p:list,i:list):
         except:
             print("Kirjuta ainult tähtede kasutades!")
 
-        
+         
 def Kustuta_andmed(p:list,i:list):
     """ 
     Удалить человека и его зарплату

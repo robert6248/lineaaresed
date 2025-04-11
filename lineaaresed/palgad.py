@@ -13,7 +13,7 @@ while True:
     if v==1:
         k=int(input("Kui palju inimesi sa tahad lisa?: "))
         for i in range(k):
-            Lisa_andmed(palgad,inimesed)
+            Lisa_andmed(palgad,inimesed) 
     elif v==2:
         Kustuta_andmed(palgad,inimesed)
     elif v==3:
