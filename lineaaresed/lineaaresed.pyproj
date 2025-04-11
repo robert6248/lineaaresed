@@ -25,6 +25,8 @@
     <Compile Include="Lihtsad prgrammid.py" />
     <Compile Include="kasutaja_funktsioonide.py" />
     <Compile Include="funktsioonide kasutamine.py" />
+    <Compile Include="palgad.py" />
+    <Compile Include="module_palgad.py" />
     <Compile Include="Tund 4.3 wordle.py" />
     <Compile Include="tund 4.5.py" />
     <Compile Include="tund 4.4.py" />

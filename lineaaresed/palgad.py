@@ -8,18 +8,18 @@ while True:
     print("Andmed: ")
     print(inimesed)
     print(palgad)
-    print("Vajuta:\n1-Andmete lisamiseks\n2-Andmete kustutamiseks nime jÃ¤rgi\n3-Leida kes saab kÃ¤tte suurim palk\n4-Leida kes saab kÃ¤tte kÃµige vÃ¤iksem palk ja milline ta on\n5-JÃ¤rjestada palgad kasvavas jÃ¤rjekorras koos nimedega\n6-JÃ¤rjestada palgad kahanevas jÃ¤rjekorras koos nimedega\n7-Teada saada, kes saavad vÃµrdset palka, leida, kui palju neid on ja kuvada nende andmed ekraanile\n8-Teha palgaotsing isiku nime jÃ¤rgi\n9-VÃ¤ljundab nimekirja inimestest (koos palgaga), kes saavad rohkem/vÃ¤hem kui mÃ¤Ã¤ratud summa.")
+    print("Vajuta:\n1-Andmete lisamiseks\n2-Andmete kustutamiseks nime järgi\n3-Leida kes saab kätte suurim palk\n4-Leida kes saab kätte kõige väiksem palk ja milline ta on\n5-Järjestada palgad kasvavas järjekorras koos nimedega\n6-Järjestada palgad kahanevas järjekorras koos nimedega\n7-Teada saada, kes saavad võrdset palka, leida, kui palju neid on ja kuvada nende andmed ekraanile\n8-Teha palgaotsing isiku nime järgi\n9-Väljundab nimekirja inimestest (koos palgaga), kes saavad rohkem/vähem kui määratud summa.")
     v=int(input())
     if v==1:
         k=int(input("Kui palju inimesi sa tahad lisa?: "))
         for i in range(k):
-            Lisa_andmed(palgad,inimesed) 
+            Lisa_andmed(palgad,inimesed)
     elif v==2:
         Kustuta_andmed(palgad,inimesed)
     elif v==3:
         Suurim_palk(palgad,inimesed)
     elif v==4:
-        VÃ¤iksem_palk(palgad,inimesed)
+        Väiksem_palk(palgad,inimesed)
     elif v==5:
         palgad,inimesed=sorteerimine_kasvav(palgad,inimesed)
         print(palgad,inimesed)
@@ -27,7 +27,7 @@ while True:
         palgad,inimesed=sorteerimine_kahanev(palgad,inimesed)
         print(palgad,inimesed)
     elif v==7:
-        VÃµrdsed_palgad(palgad,inimesed)
+        Võrdsed_palgad(palgad,inimesed)
     elif v==8:
         palgaotsing(palgad,inimesed)
     elif v==9:
