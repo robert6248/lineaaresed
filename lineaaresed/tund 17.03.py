@@ -24,7 +24,7 @@ print(elemendid)
 elemendid.pop(0)
 elemendid.pop()
 print(elemendid)
-#index
+#index 
 ind=list_sõne.index("r")
 print(f"Täht r on {ind}-indeksiga")
 #count

@@ -20,7 +20,7 @@ print("Ristküliku pindala", S)
 print("Ristküliku ümbermõõt", P)
 print("Ristküliku diagonaal", round(di, 2))
 
-
+ 
 print("Ringi karakteristikud")
 r = float(input("Sisesta ringi raadiusi pikkus => "))
 d = 2 * r

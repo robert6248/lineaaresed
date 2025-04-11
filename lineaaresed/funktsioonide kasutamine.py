@@ -49,7 +49,7 @@ from math import *
 
 # #bank
 # while True:
-#     try:
+#     try: 
 #         summa = float(input("Sisesta algne summa (eurodes): "))
 #         aastad = int(input("Sisesta aastate arv: "))
 #         if summa <= 0 or aastad <= 0:

@@ -8,7 +8,7 @@ a=float(input("A: "))
 if a%2==0 and a!=0:
     print(f"Arv {a} on paaris")
 elif a==0:
-    print(f"Arv {a} on märamatu")
+    print(f"Arv {a} on märamatu") 
 else:
     print(f"Arv {a} on paaritud")
 

@@ -3,7 +3,7 @@ input(), sisestame info ja edastame tekstina
 float(), tekst ->ujukomaarv
 int(), tekst konverteerib arvusse
 upper(), "SÕNE"
-lower(), "sõne"
+lower(), "sõne" 
 capitalize(), "Sõne"
 type() määrab muutuja tüübi
 math, random moodulide funktsioonid: pi, round(),randint()

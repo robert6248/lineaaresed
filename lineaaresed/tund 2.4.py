@@ -94,7 +94,7 @@ for küsimuse_nr in range(10):
         p+=1
     print(f"Õige vastus: {õige_vastus}")
 print("Vale")
-
+ 
 # #5 ülesanne
 # N = int(input("Sisesta suurus (N): "))
 # for j in range(N):

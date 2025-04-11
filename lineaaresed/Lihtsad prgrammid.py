@@ -14,7 +14,7 @@ print(tana1)
 tana2 = tana.strftime("%B %d, %Y")
 print(tana2)
 # 12/27/22
-tana3 = tana.strftime("%m/%d/%y")
+tana3 = tana.strftime("%m/%d/%y") 
 print(tana3)
 # Dec-27-2022
 tana4 = tana.strftime("%b-%d-%Y")

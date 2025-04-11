@@ -35,7 +35,7 @@ try:
                 hinnang = "Tervisele ohtlik rasvumine"
             
             print(f"{nimi}, Sinu KMI hinnang on: {hinnang}")
-        else:
+        else: 
             print("Viga! Pikkus ja kaal peavad olema positiivsed arvud.")
     elif valik == 0:
         print("Kahju! See on väga kasulik info!")

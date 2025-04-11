@@ -15,7 +15,7 @@ for i in range(0,6,1):
         else:
             print("*",end=" ")
     print()
-    if answer==rnd:
+    if answer==rnd: 
         print("Correct! the word was ", rnd, )
         break
     else:

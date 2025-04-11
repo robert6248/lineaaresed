@@ -19,7 +19,7 @@ except:
 print("Ristküliku karakteristikud")
 try:
     b = int(input("Sisesta ristküliku 1. külje pikkus => "))
-    c = int(input("Sisesta ristküliku 2. külje pikkus => "))
+    c = int(input("Sisesta ristküliku 2. külje pikkus => ")) 
     
     if b <= 0 or c <= 0:
         print("Küljed peavad olema positiivsed numbrid.")
