@@ -54,7 +54,7 @@ def main():
         elif valik == '4':
             paranda_sona()
         elif valik == '5':
-            testi_teadmisi()
+            testi_teadmisi() 
         elif valik == '6':
             print("Kena päeva!")
             break
