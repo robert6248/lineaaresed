@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ede115a3-58fb-4387-a460-617b4b46b7bc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tund 5.5.py</StartupFile>
+    <StartupFile>tund 6.1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -36,6 +36,8 @@
     <Compile Include="tund 2.2.py" />
     <Compile Include="tund 1.3 ifelse.py" />
     <Compile Include="tund 5.5.py" />
+    <Compile Include="tund 21.04.py" />
+    <Compile Include="tund 6.1.py" />
     <Compile Include="vigade otsing with try, if, else, except.py" />
     <Compile Include="Vigade otsing.py" />
     <Compile Include="Ülesanded.py" />
