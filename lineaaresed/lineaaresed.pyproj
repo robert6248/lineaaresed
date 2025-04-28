@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ede115a3-58fb-4387-a460-617b4b46b7bc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tund 6.1.py</StartupFile>
+    <StartupFile>Euroopariigid.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,12 +21,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Euroopariigid.py" />
+    <Compile Include="funktsioonid.py" />
     <Compile Include="lineaaresed.py" />
     <Compile Include="Lihtsad prgrammid.py" />
     <Compile Include="kasutaja_funktsioonide.py" />
     <Compile Include="funktsioonide kasutamine.py" />
+    <Compile Include="patients.py" />
     <Compile Include="palgad.py" />
     <Compile Include="module_palgad.py" />
+    <Compile Include="Teema 7.py" />
+    <Compile Include="tund 28.04.py" />
     <Compile Include="Tund 4.3 wordle.py" />
     <Compile Include="tund 4.5.py" />
     <Compile Include="tund 4.4.py" />
@@ -38,12 +43,15 @@
     <Compile Include="tund 5.5.py" />
     <Compile Include="tund 21.04.py" />
     <Compile Include="tund 6.1.py" />
+    <Compile Include="tund 7.5.py" />
     <Compile Include="vigade otsing with try, if, else, except.py" />
     <Compile Include="Vigade otsing.py" />
     <Compile Include="Ülesanded.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="funktsioon.txt" />
+    <Content Include="Loetelu.txt" />
+    <Content Include="riigid_pealinnad.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

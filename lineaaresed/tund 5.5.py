@@ -1,40 +1,55 @@
 import random
+from patients import create_patients, patients_below_30, average_vitamin_level, top_k_patients, search_patient
 
-#8
-def patsiendid():
-    nimed = []
-    vitamiinid = []
-    n = int(input("Patsientide arv: "))
-    for i in range(n):
-        nimi = input("Nimi: ")
-        vit = random.randint(10, 100)
-        nimed.append(nimi)
-        vitamiinid.append(vit)
-    while True:
-        print("""
-1. Alla 30 tase
-2. Keskmine tase
-3. K parimat
-4. Otsi nime järgi
-5. Välju
-""")
-        v = input("Valik: ")
-        if v == "1":
-            for nimi, vit in zip(nimed, vitamiinid):
-                if vit < 30:
-                    print(nimi, vit)
-        elif v == "2":
-            print("Keskmine:", sum(vitamiinid) / len(vitamiinid))
-        elif v == "3":
-            k = int(input("Mitu parimat? "))
-            for nimi, vit in sorted(zip(nimed, vitamiinid), key=lambda x: x[1], reverse=True)[:k]:
-                print(nimi, vit)
-        elif v == "4":
-            otsing = input("Nimi: ")
-            for nimi, vit in zip(nimed, vitamiinid):
-                if otsing.lower() in nimi.lower():
-                    print(nimi, vit)
-        elif v == "5":
-            break
+n = int(input("Введите количество пациентов: "))
 
-patsiendid()
+nimed, vitamiinid = create_patients(n)
+
+while True:
+    print("""
+    1. Пациенты с уровнем витаминов меньше 30
+    2. Средний уровень витаминов
+    3. K лучших пациентов
+    4. Поиск пациента по имени
+    5. Выход
+    """)
+
+    valik = input("Выберите пункт меню: ")
+
+    if valik == "1":
+        result = patients_below_30(n, nimed, vitamiinid)
+        if result:
+            for name, vit in result:
+                print(name, vit)
+        else:
+            print("Нет пациентов с уровнем витаминов меньше 30.")
+
+    elif valik == "2":
+        keskmine = average_vitamin_level(vitamiinid)
+        print("Средний уровень витаминов:", keskmine)
+
+    elif valik == "3":
+        try:
+            k = int(input("Введите количество лучших пациентов: "))
+            if k > n:
+                print("Количество лучших пациентов не может быть больше общего числа пациентов.")
+            else:
+                result = top_k_patients(k, nimed, vitamiinid)
+                for name, vit in result:
+                    print(name, vit)
+        except ValueError:
+            print("Пожалуйста, введите корректное число.")
+
+    elif valik == "4":
+
+        otsing = input("Введите имя пациента для поиска: ")
+        result = search_patient(otsing, nimed, vitamiinid)
+        if result:
+            for name, vit in result:
+                print(name, vit)
+        else:
+            print("Пациент не найден.")
+
+    elif valik == "5":
+        print("Выход из программы.")
+        break

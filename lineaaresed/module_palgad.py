@@ -144,7 +144,7 @@ def filtr_palgad(p: list, i: list) -> None:
             print("Ei leidnud inimesi, kes vastaksid kriteeriumitele.")
     except:
         print("Palun sisestage korrektne number!")
-
+z
 def Bonus_salary(p: list,i: list): 
     """
     Своя функция по выбору. Добавляет прибавку к зарплате выбранному работнику, позволяя выбрать процент на какой зарплата увеличится
