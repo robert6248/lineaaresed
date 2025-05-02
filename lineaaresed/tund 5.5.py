@@ -16,7 +16,7 @@ while True:
 
     valik = input("Выберите пункт меню: ")
 
-    if valik == "1":
+    if valik == "1": 
         result = patients_below_30(n, nimed, vitamiinid)
         if result:
             for name, vit in result:
