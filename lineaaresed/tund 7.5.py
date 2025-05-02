@@ -1,22 +1,18 @@
-from funktsioonid import (
-    lae_kontaktid, salvesta_kontaktid, lisa_kontakt,
-    kuva_kontaktid, otsi_kontakt, kustuta_kontakt,
-    muuda_kontakt, sorteeri_kontaktid, saada_email
-)
+from funktsioonid import *
 
-def peamenüü():
+def peamenÃ¼Ã¼():
     kontaktid = lae_kontaktid()
 
     while True:
         print("\nTelefoniraamat:")
         print("1. Lisa kontakt")
-        print("2. Kuva kõik kontaktid")
-        print("3. Otsi kontakti nime järgi")
+        print("2. Kuva kÃµik kontaktid")
+        print("3. Otsi kontakti nime jÃ¤rgi")
         print("4. Kustuta kontakt")
         print("5. Muuda kontakti")
         print("6. Sorteeri kontaktid")
         print("7. Saada e-kiri kontaktile")
-        print("8. Välju")
+        print("8. VÃ¤lju")
 
         valik = input("Vali tegevus (1-8): ")
 
@@ -43,4 +39,4 @@ def peamenüü():
 
         salvesta_kontaktid(kontaktid)
 
-peamenüü()
+peamenÃ¼Ã¼()
