@@ -28,7 +28,7 @@ print("Kogusumma:", kogusumma, "m")
 
 # 4 
 plt.figure(figsize=(10, 6))
-plt.bar(nimed, korgused, color="skyblue")
+plt.bar(nimed, korgused, color="skyblue") 
 plt.xlabel("Mäed")
 plt.ylabel("Kõrgus (m)")
 plt.title("Mägede kõrgused")
