@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ede115a3-58fb-4387-a460-617b4b46b7bc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tund 8.2.py</StartupFile>
+    <StartupFile>Teema8.2_tkinker.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -31,6 +31,7 @@
     <Compile Include="palgad.py" />
     <Compile Include="module_palgad.py" />
     <Compile Include="Teema 7.py" />
+    <Compile Include="Teema8.2_tkinker.py" />
     <Compile Include="Teema8.py" />
     <Compile Include="tund 28.04.py" />
     <Compile Include="Tund 4.3 wordle.py" />
