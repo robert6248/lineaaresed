@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ede115a3-58fb-4387-a460-617b4b46b7bc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Teema8.2_tkinker.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,10 +23,12 @@
   <ItemGroup>
     <Compile Include="Euroopariigid.py" />
     <Compile Include="funktsioonid.py" />
+    <Compile Include="funktsioonid1.py" />
     <Compile Include="lineaaresed.py" />
     <Compile Include="Lihtsad prgrammid.py" />
     <Compile Include="kasutaja_funktsioonide.py" />
     <Compile Include="funktsioonide kasutamine.py" />
+    <Compile Include="main.py" />
     <Compile Include="patients.py" />
     <Compile Include="palgad.py" />
     <Compile Include="module_palgad.py" />
@@ -54,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="funktsioon.txt" />
+    <Content Include="kontaktid.json" />
     <Content Include="Loetelu.txt" />
     <Content Include="maed.txt" />
     <Content Include="riigid_pealinnad.txt" />
