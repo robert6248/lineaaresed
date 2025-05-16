@@ -37,7 +37,7 @@ while True:
                 result = top_k_patients(k, nimed, vitamiinid)
                 for name, vit in result:
                     print(name, vit)
-        except ValueError:
+        except:
             print("Пожалуйста, введите корректное число.")
 
     elif valik == "4":

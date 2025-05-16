@@ -1,4 +1,4 @@
-import json
+﻿import json
 import os
 
 faili_nimi = "kontaktid.json"
@@ -37,3 +37,26 @@ def muuda_kontakt(kontaktid, vana_nimi, uus_nimi, uus_telefon, uus_email):
             k["email"] = uus_email
             return True
     return False
+
+# Новые функции:
+
+def otsi_kontakt_telefoniga(kontaktid, telefon):
+    """Поиск контакта по номеру телефона."""
+    return [k for k in kontaktid if telefon in k["telefon"]]
+
+def kontaktide_arv(kontaktid):
+    """Возвращает количество контактов."""
+    return len(kontaktid)
+
+def kustuta_kõik_kontaktid(kontaktid):
+    """Удаляет все контакты и сохраняет пустой файл."""
+    kontaktid.clear()
+    salvesta_kontaktid_faili(kontaktid)
+
+def otsi_kontaktid_emaili_domeeniga(kontaktid, domeen):
+    """Поиск контактов по домену электронной почты."""
+    return [k for k in kontaktid if domeen in k["email"]]
+
+def kuva_kontaktid_alfabeedi_jargi(kontaktid):
+    """Отображение всех контактов в алфавитном порядке по имени."""
+    return sorted(kontaktid, key=lambda x: x["nimi"].lower())
