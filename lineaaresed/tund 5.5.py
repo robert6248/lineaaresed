@@ -5,7 +5,7 @@ n = int(input("Введите количество пациентов: "))
 
 nimed, vitamiinid = create_patients(n)
 
-while True:
+while True: 
     print("""
     1. Пациенты с уровнем витаминов меньше 30
     2. Средний уровень витаминов
