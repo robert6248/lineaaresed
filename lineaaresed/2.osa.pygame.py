@@ -1,5 +1,6 @@
 import pygame
-
+import sys
+import random
 pygame.init()
 
 red = [255, 0, 0]
@@ -7,49 +8,67 @@ green = [0, 255, 0]
 blue = [0, 0, 255]
 pink = [255, 153, 255]
 lGreen = [153, 255, 153]
+black = [0, 0, 0]
+white = [255, 255, 255]
+grey = [170, 170, 170]
+brown = [130, 60, 0]
+
 
 pind = pygame.display.set_mode([640, 480])
 pygame.display.set_caption("Maja")
-pind.fill(lGreen)
+pind.fill(brown)
 
-def drawHouse(x, y, width, height, screen, color):
-    points = [
-        (x, y - (3/4.0) * height),
-        (x, y),
-        (x + width, y),
-        (x + width, y - (3/4.0) * height),
-        (x + width / 2.0, y - height),
-    ]
-    pygame.draw.polygon(screen, color, points, 0)
+def draw_house(x, y, width, height, screen, color):
+    #дом
+    points = [(x, y - ((3/4.0) * height)), (x, y), (x + width, y), (x + width, y - (3/4.0) * height),
+              (x, y - ((3/4.0) * height)), (x + width / 2.0, y - height), (x + width, y - (3/4.0) * height)]
+    line_thickness = 3
+    pygame.draw.lines(screen, color, False, points, line_thickness)
 
-def drawDoor(x, y, width, height, screen, color):
-    door_width = width // 4  
-    door_height = height // 2
-    door_x = x + (width // 2) - (door_width // 2) 
-    door_y = y + height - door_height 
-    pygame.draw.rect(screen, color, (door_x, door_y, door_width, door_height))
+def draw_door(x, y, width, height, screen):
+    #дверь
+    pygame.draw.rect(screen, black, [x, y, width, height])
 
-def drawWindow(x, y, width, height, screen, color):
-    window_size = width // 5 
-    window_x = x + (width // 4) - (window_size // 2) 
-    window_y = y + (height // 3) - (window_size // 2)  
-    pygame.draw.rect(screen, color, (window_x, window_y, window_size, window_size))
+def draw_window(x, y, width, height, screen):
+    #окно
+    pygame.draw.rect(screen, white, [x, y, width, height])
 
-def drawChimney(x, y, width, height, screen, color):
-    chimney_width = 50  
-    chimney_height = 150 
-    chimney_x = x + (width // 2) - (chimney_width // 2)  
-    chimney_y = y - height - chimney_height  
-    pygame.draw.rect(screen, color, (chimney_x, chimney_y, chimney_width, chimney_height))
+def draw_chimney(x, y, width, height, screen):
+    #дымоход
+    pygame.draw.rect(screen, grey, [x, y, width, height])
 
-drawHouse(100, 300, 200, 200, pind, red)
-drawDoor(100, 300, 200, 200, pind, blue)
-drawWindow(100, 300, 200, 200, pind, pink)
-drawChimney(100, 300, 200, 200, pind, green)
-
-pygame.display.flip()
+def main():
+    draw_house(100, 400, 300, 400, pind, red)
 
 
-pygame.time.wait(50000)
+    door_width = 80
+    door_height = 120
+    door_x = 100 + (300 // 2) - (door_width // 2)
+    door_y = 400 - door_height
+    draw_door(door_x, door_y, door_width, door_height, pind)
 
-pygame.quit()
+
+    window_width = 50
+    window_height = 65
+    window_x = door_x + door_width + 10
+    window_y = door_y + (door_height // 6)
+    draw_window(window_x, window_y, window_width, window_height, pind)
+
+
+    chimney_width = 40
+    chimney_height = 80
+    chimney_x = 10 + (300 // 2) - (chimney_width // 2)
+    chimney_y = 390 - (3 / 4.0) * 400 - chimney_height
+    draw_chimney(chimney_x, chimney_y, chimney_width, chimney_height, pind)
+
+    pygame.display.flip()
+
+    while True:
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            break
+
+    pygame.quit()
+
+
+main()
