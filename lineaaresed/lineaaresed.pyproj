@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ede115a3-58fb-4387-a460-617b4b46b7bc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>pygame ül 1.1.py</StartupFile>
+    <StartupFile>2.osa.pygame.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="1.osa_pygame.py" />
+    <Compile Include="2.osa.pygame.py" />
     <Compile Include="Euroopariigid.py" />
     <Compile Include="funktsioonid.py" />
     <Compile Include="funktsioonid1.py" />
