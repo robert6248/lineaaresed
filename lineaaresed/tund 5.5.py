@@ -1,20 +1,21 @@
 import random
 from patients import create_patients, patients_below_30, average_vitamin_level, top_k_patients, search_patient
 
-n = int(input("Введите количество пациентов: "))
+n = int(input("Sisesta patsientide arv: "))
 
 nimed, vitamiinid = create_patients(n)
 
 while True: 
     print("""
-    1. Пациенты с уровнем витаминов меньше 30
-    2. Средний уровень витаминов
-    3. K лучших пациентов
-    4. Поиск пациента по имени
-    5. Выход
+    1. Patsientide vitamiinitase alla 30
+    2. Keskmine vitamiinitase
+    3. K parimat patsienti
+    4. Patsientide otsing nime järgi
+    5. Kõik patsiendid
+    6. Väljumine
     """)
 
-    valik = input("Выберите пункт меню: ")
+    valik = input("Vali menüüpunkt: ")
 
     if valik == "1": 
         result = patients_below_30(n, nimed, vitamiinid)
@@ -22,34 +23,38 @@ while True:
             for name, vit in result:
                 print(name, vit)
         else:
-            print("Нет пациентов с уровнем витаминов меньше 30.")
+            print("Puuduvad patsiendid, kelle vitamiinitase on alla 30.")
 
     elif valik == "2":
         keskmine = average_vitamin_level(vitamiinid)
-        print("Средний уровень витаминов:", keskmine)
+        print("Keskmine vitamiinitase:", keskmine)
 
     elif valik == "3":
         try:
-            k = int(input("Введите количество лучших пациентов: "))
+            k = int(input("Sisesta parimate patsientide arv: "))
             if k > n:
-                print("Количество лучших пациентов не может быть больше общего числа пациентов.")
+                print("Parimate patsientide arv ei saa olla suurem kui patsientide koguarv.")
             else:
                 result = top_k_patients(k, nimed, vitamiinid)
                 for name, vit in result:
                     print(name, vit)
         except:
-            print("Пожалуйста, введите корректное число.")
+            print("Palun sisesta korrektne number.")
 
     elif valik == "4":
-
-        otsing = input("Введите имя пациента для поиска: ")
+        otsing = input("Sisesta patsiendi nimi otsinguks: ")
         result = search_patient(otsing, nimed, vitamiinid)
         if result:
             for name, vit in result:
                 print(name, vit)
         else:
-            print("Пациент не найден.")
+            print("Patsienti ei leitud.")
 
     elif valik == "5":
-        print("Выход из программы.")
+        print("Kõik patsiendid:")
+        for name, vit in zip(nimed, vitamiinid):
+            print(name, vit)
+
+    elif valik == "6":
+        print("Programmist väljumine.")
         break
