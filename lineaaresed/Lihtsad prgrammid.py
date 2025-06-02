@@ -109,6 +109,7 @@ print(f"ristlikku ümbermõõt on {ümbermõõt}, ja pindala on {pindala}.")
 # Ülesanne 8
 kütus_litr=float(input("sisesta tangitud kütuse kogus: "))
 läbitud_km=float(input("sisesta läbitud km: "))
+kütuse_kulu=kütus_litr/läbitud_km*100
 if läbitud_km>0:
 # kütuse_kulu kütus_litr/läbitud_km*100
     print(f"keskmine kütusekulu on {kütuse_kulu} liitrit.")
