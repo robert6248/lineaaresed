@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 plt.figure(figsize=(10, 6))
-plt.title("Очки")
+plt.title("prillid")
 #1
 x1 = np.linspace(-9, -1, 400)
 y1 = -(1/16)*(x1 + 5)**2 + 2
