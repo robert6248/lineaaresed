@@ -1,7 +1,17 @@
 [
     {
-        "nimi": "а",
-        "telefon": "а",
-        "email": "а"
+        "nimi": "1",
+        "telefon": "1234",
+        "email": "gmail"
+    },
+    {
+        "nimi": "2",
+        "telefon": "2345",
+        "email": "gamail"
+    },
+    {
+        "nimi": "3",
+        "telefon": "3456",
+        "email": "gbmail"
     }
 ]

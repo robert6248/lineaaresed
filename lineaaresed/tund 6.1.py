@@ -1,63 +1,75 @@
 import random
 
-
-sonastik = dict([
-    ('koer', 'собака'),
-    ('kass', 'кошка'),
-    ('maja', 'дом'),
-    ('auto', 'машина'),
-    ('päike', 'солнце')
-])
-
-
+sonastik = {
+    'koer': 'собака',
+    'kass': 'кошка',
+    'maja': 'дом',
+    'auto': 'машина',
+    'päike': 'солнце'
+}
 def tolgi_est_rus(sona):
-    return sonastik.get(sona, "See sõna pole sõnastikus!")
+    if sona in sonastik:
+        return sonastik[sona]
+    else:
+        return ("sõna ei leitud!")
 
 def tolgi_rus_est(sona):
-    return next((est for est, rus in sonastik.items() if rus == sona), "Это слово не найдено в словаре!")
+    for est, rus in sonastik.items():
+        if rus == sona:
+            return est
+    return ("sõna ei leitud")
 
 def lisa_sona():
-    sonastik[input("Sisesta uus sõna eesti keeles: ")] = input("Sisesta vene tõlge: ")
-    print("Sõna lisatud!")
+    est = input("Eesti sõna: ")
+    rus = input("Vene tõlge: ")
+    sonastik[est] = rus
+    print("Lisatud!")
 
 def paranda_sona():
-    vana_sona = input("Sisesta sõna, mida soovid parandada: ")
-    if vana_sona in sonastik:
-        sonastik[vana_sona] = input("Sisesta новый vene tõlge: ")
-        print("Sõna parandatud!")
+    est = input("Millist sõna muuta: ")
+    if est in sonastik:
+        uus_rus = input("Uus vene tõlge: ")
+        sonastik[est] = uus_rus
+        print("Muudetud!")
     else:
         print("Sõna ei leitud!")
 
 def testi_teadmisi():
-    for est in random.sample(list(sonastik.keys()), 3):
-        if input(f"Sisesta vene tõlge sõnale '{est}': ") == tolgi_est_rus(est):
+    kogus = min(3, len(sonastik))  # 3 küsimust
+    for est in random.sample(list(sonastik.keys()), kogus):
+        vastus = input(f"Kuidas on vene keeles '{est}': ")
+        if vastus == sonastik[est]:
             print("Õige!")
         else:
-            print(f"Vale! Õige vastus on: {tolgi_est_rus(est)}")
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+            print(f"Vale! Õige vastus on: {sonastik[est]}")
+
+
 def main():
     while True:
-        print("\n1 - Tõlgi eesti -> vene")
-        print("2 - Tõlgi vene -> eesti")
-        print("3 - Lisa uus sõna")
+        print("\n1 - Eesti -> Vene")
+        print("2 - Vene -> Eesti")
+        print("3 - Lisa sõna")
         print("4 - Paranda sõna")
         print("5 - Testi teadmisi")
         print("6 - Välju")
-        valik = input("Tee oma valik: ")
+        valik = input("Valik: ")
 
         if valik == '1':
-            print(f"Tõlge vene keelde: {tolgi_est_rus(input('Sisesta sõna eesti keeles: '))}")
+            est = input("Sisesta eesti sõna: ")
+            print(tolgi_est_rus(est))
         elif valik == '2':
-            print(f"Tõlge eesti keelde: {tolgi_rus_est(input('Sisesta sõna vene keeles: '))}")
+            rus = input("Sisesta vene sõna: ")
+            print(tolgi_rus_est(rus))
         elif valik == '3':
             lisa_sona()
         elif valik == '4':
             paranda_sona()
         elif valik == '5':
-            testi_teadmisi() 
+            testi_teadmisi()
         elif valik == '6':
-            print("Kena päeva!")
+            print("Head aega!")
             break
         else:
-            print("Vale valik, proovi uuesti!")
+            print("Vale valik!")
+
 main()
